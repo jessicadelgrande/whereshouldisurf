@@ -1,0 +1,15 @@
+@mixin bp($size) {
+ 
+	@if $size == 'med' {
+		@media (max-width: 750px) { 
+			@content; 
+		}
+	}
+
+	@if $size == 'sml' {
+		@media (max-width: 450px) { 
+			@content; 
+		}
+	}
+
+}
