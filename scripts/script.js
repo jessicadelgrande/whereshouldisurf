@@ -5,10 +5,10 @@ surfApp.weatherKey = '6d7985dd0ec241b1a91185228172802'
 // surfApp.flightKey = 'je607667967445462231337660809615' 
 // Skyscanner
 surfApp.apiKey = 'prtl6749387986743898559646983194' 
-// this one works!!! but is not the one assigned from dashboard, it is the same one for both via proxy
+// note: this is the proxy key, not the actual Skyscanner key
+
 
 // background image randomizer
-
 const backgroundImages = [
 	'anton-repponen-99506-small.jpg',
 	'austin-neill-159602-small.jpg',
@@ -23,8 +23,6 @@ const backgroundImages = [
 $('#background').css({'background-image': 'url(assets/' + backgroundImages[Math.floor(Math.random() * backgroundImages.length)] + ')'});
 
 // end background image randomizer
-
-
 // start large object containing location info. latlng values and flightURL are taken from here and used to make an ajax call for each
 
 surfApp.locationInfo = {
@@ -121,7 +119,6 @@ surfApp.locationInfo = {
 };
 
 // end location info
-
 // flight script
 
 surfApp.getFlightInfo = (location) => {

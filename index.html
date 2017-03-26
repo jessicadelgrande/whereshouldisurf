@@ -18,14 +18,10 @@
 			<main class="mainPage" id="mainPage">
 				
 				<h1>Where should I surf?</h1>
-
-				<h2 class="mainPage__subhead">Choose your surf destination, and we'll tell you the current surf conditions and the lowest flight price from Toronto.</h2>
-
+				<h2 class="mainPage__subhead">Choose your surf destination and your travel dates, and we'll tell you the current surf conditions and the lowest flight price from Toronto.</h2>
 				<form>
-
 				  <label for="destination">Choose your surf nirvana:</label>
 				  <select name="destination" id="destinationMenu">
-
 				      <option value="canggu">Canggu, Bali</option> 
 				      <option value="donegal">Donegal, Ireland</option> 
 				      <option value="durban">Durban, South Africa</option> 
@@ -44,69 +40,59 @@
 				      <option value="tavarua">Tavarua, Fiji</option>
 				      <option value="tofoBeach">Tofo Beach, Mozambique</option>
 				      <option value="waikiki">Waikiki, Hawaii</option>
-
 				  </select>
-
+<!-- 				  <div class="inputContainer">
+				  	<label for="departureDate">I want to leave Toronto on:</label>
+				  	<input type="date" class="dateInput" id="departureDate" name="departureDate"><br>	
+				  </div>
+				  <div class="inputContainer">
+				  	<label for="returnDate">I should probably stop surfing on:</label>
+				  	<input type="date" class="dateInput" id="returnDate" name="returnDate"><br>
+				  </div> -->
 				  <button class="submit" id="submit"><a href="#"></a>HANG TEN</button>
-
 				</form>
 
 			</main><!-- end .mainPage -->
 
 			<section class="resultsPage" id="resultsPage">
-
-					<h2 class="resultsPage__title">You could be surfing in <span class="displayLocation">{ location }</span> for just $<span class="displayPrice">{ price }</span>!</h2>
-
-					<div class="resultsContainer">
-					
-						<p>Current conditions: <span class="displayWeatherDesc">{ weather description }</span></p>
-
+					<h2 class="resultsPage__title">You could be surfing in <span class="displayLocation">{ location }</span> for just $<span class="displayPrice">{ $ }</span>!</h2>
+					<div class="resultsContainer">				
+						<p>Current conditions: <span class="displayWeatherDesc">{ weather }</span></p>
 						<div class="temperatures">
-							<p class=highTemp__container>Today's high: <span class="displayHighTemp">{ daily high temp C }</span>&#176;C</p>
-
-							<p class="lowTemp__container">Today's low: <span class="displayLowTemp">{ daily low temp C }</span>&#176;C</p>
+							<p class=highTemp__container>Today's high: <span class="displayHighTemp">{ high }</span>&#176;C</p>
+							<p class="lowTemp__container">Today's low: <span class="displayLowTemp">{ low }</span>&#176;C</p>
 						</div>
-
 						<div class="waterContainer">
 							<div class="waterContainer__swell">
-								<p>Swell height: <span class="displaySwellHeight">{ swell height }</span> m</p>
-
-								<p>Swell period: <span class="displaySwellPeriod">{ swell period }</span> sec</p>
-
-								<p>Swell direction: <span class="displaySwellDirection">{ swell direction }</span></p>
+								<p>Swell height: <span class="displaySwellHeight">{ swell ht }</span> m</p>
+								<p>Swell period: <span class="displaySwellPeriod">{ swell pd }</span> sec</p>
+								<p>Swell direction: <span class="displaySwellDirection">{ swell dir }</span></p>
 							</div>
-
 							<div class="waterContainer__waterTemp">
 								<p>Water temperature:</p>
-
 								<p class="displayWaterTemp__container"><span class="displayWaterTemp">{ water temp }</span>&#176;C</p>
 							</div>
-
 						</div><!-- end .waterContainer -->
-
 					</div><!-- end .resultsContainer -->
-
 					<button class="submit newDestination" id="tryAgain"><a href="#"></a>Check another destination</button>
-
-				</div>
-
-			</section><!-- end .surfResults -->
+			</section><!-- end .resultsPage -->
 
 		</div><!-- end .masterContainer and .wrapper -->
 
 	</div><!-- end .background -->
 
 	<footer>
-	
 		<div>
-			&copy; 2017 Jessica Del Grande
+			<p>
+				&copy; 
+				<script type="text/javascript">document.write(new Date().getFullYear());</script> Jessica Del Grande
+			</p>
 		</div>
-
 		<div>
-			Flight information courtesy <a href="http://skyscanner.com">Skyscanner</a>. Weather information courtesy <a href="http://worldweatheronline.com">World Weather Online</a>.
+			<p>
+				Flight information from <a href="http://skyscanner.com">Skyscanner</a>. Weather information from <a href="http://worldweatheronline.com">World Weather Online</a>.
+			</p>
 		</div>
-		
-
 	</footer>
 
 
