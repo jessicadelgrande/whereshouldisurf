@@ -1,7 +1,7 @@
 const surfApp = {}
 
-surfApp.weatherKey = '6d7985dd0ec241b1a91185228172802'
-// World Weather Online - 60 day free trial beginning Feb 28, 2017
+surfApp.weatherKey = '8c9910dca1834e4eb7d225649252306'
+// World Weather Online - 30 day free trial beginning Feb 28, 2017
 // surfApp.flightKey = 'je607667967445462231337660809615' 
 // Skyscanner
 surfApp.apiKey = 'prtl6749387986743898559646983194' 
